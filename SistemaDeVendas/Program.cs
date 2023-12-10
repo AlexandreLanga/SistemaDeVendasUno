@@ -891,6 +891,7 @@ internal class Program
                     if (login == loginUsu && senha == senhaUsu)
                     {
                         Console.WriteLine($"Sistema acessado pelo usuário {login}");
+                        GravarLog(login, $"Usuário {login} fez login");
                         Console.ReadKey();
                         MenuPrincipal(login);
                     }
